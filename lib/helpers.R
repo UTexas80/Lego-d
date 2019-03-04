@@ -3,7 +3,13 @@ helper.function <- function()
   return(1)
 }
 
-# LEGO colors ----
+library(dplyr, warn.conflicts = FALSE); 
+library(tidyr, warn.conflicts = FALSE); 
+library(purrr, warn.conflicts = FALSE); 
+library(ggplot2, warn.conflicts = FALSE); 
+library(readr)
+
+# LEGO colors ----                                                              http://tinyurl.com/yx9w8vje
 if(file.exists("Colors/Lego_Colors.csv")){lego_color_path <- "Colors/Lego_Colors.csv"} else{
   lego_color_path <- "https://raw.githubusercontent.com/ryantimpe/LEGOMosaics/master/Colors/Lego_Colors.csv"
 }

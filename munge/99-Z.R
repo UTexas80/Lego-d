@@ -1,4 +1,6 @@
-# Example postprocessing script.
+# VERSION HISTORY
+z99.version = "1.0.0"
+z99.ModDate = as.Date("2019-01-01")
 
 # save RData image
 save.image("readability.RData")
@@ -59,7 +61,7 @@ diagnostic.rows = 19   #MAGIC NUMBER - TRIAL & ERROR
 while (last.diagnostic <= nrow(diagnostic)){
   tmp.diagnostic = diagnostic[last.diagnostic:min(nrow(diagnostic),last.diagnostic+diagnostic.rows),]
   layout(c(1,1))
-  textplot(cbind(tmp.diagnostic),valign="top") 
+  # textplot(cbind(tmp.diagnostic),valign="top") 
 
   
   last.diagnostic = last.diagnostic + diagnostic.rows + 1
@@ -67,10 +69,6 @@ while (last.diagnostic <= nrow(diagnostic)){
 
 finish.time = Sys.time()
 time = finish.time = start.time
-
-# VERSION HISTORY
-z99.version = "1.0.0"
-z99.ModDate = as.Date("2019-01-01")
 
 # 2019.01.01 - v.1.0.0                                                          http://tinyurl.com/y54k8gsw
 #  1st release                                                                  http://tinyurl.com/yx9w8vje

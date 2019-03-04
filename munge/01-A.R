@@ -8,8 +8,8 @@
 #Packages Required: dplyr, tidyr, purrrr, ggplot2, readr
 
 #RUN THIS CODE AFTER DOWNLOADING SOURCE FILES
-library(jpeg)
-source("0_Functions.R")
+# library(jpeg)
+# source("0_Functions.R")
 
 #This will take a few minutes to run
 lego_mosaic <- readJPEG("Images/GlenCFalk.jpg") %>% 

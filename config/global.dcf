@@ -8,7 +8,7 @@ munging: TRUE
 logging: FALSE
 logging_level: INFO
 load_libraries: FALSE
-libraries: dplyr, ggplot2, lubridate, plyr, purrr, readr, rayshader, reshape2, stringr, tidyr, tidyverse
+libraries: dplyr, ggplot2, jpeg, lubridate, plyr, purrr, readr, rayshader, reshape2, stringr, tidyr, tidyverse
 as_factors: TRUE
 tables_type: tibble
 attach_internal_libraries: FALSE

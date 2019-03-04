@@ -12,7 +12,7 @@ library(jpeg)
 source("0_Functions.R")
 
 #This will take a few minutes to run
-lego_mosaic <- readJPEG("Images/Ryan.jpg") %>% 
+lego_mosaic <- readJPEG("Images/GlenCFalk.jpg") %>% 
   # scale_image(48) %>% #Single value for square,
   scale_image(c(48,  56), brightness = 1.1) %>% # WIDE -  c(W, H) for rectangle
   legoize() %>% 
